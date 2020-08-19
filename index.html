@@ -5,15 +5,47 @@
   secretsilvers
     }
   <script>
-      function buttonPress(){
+    var r = 255;
+    var g = 255;
+    var b = 255;
+    function buttonPress(){
         document.body.style.backgroundColor="rgb(255,0,0)";
-      }
+    }
+    function sliderChange(){
+      document.body.style.backgroundColor=("rgb("+r+","+g+","+b+")")
+    }
+    
+    function sliderChangeR(val){
+      r = val;
+      sliderChange();
+    }
+    
+    function sliderChangeG(val){
+      g = val;
+      sliderChange();
+    }
+    
+    function sliderChangeB(val){
+      b = val;
+      sliderChange();
+    }
+    
+    
+         
+    
   </script>
 <h1>Da Lenny Faces will rule you all.</h1>
 <p>Da types of da lenny faces: 
 Regular happy lenny faces:  ( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°) Sad Lenny Face:
   <iframe width="560" height="315" src="https://www.youtube.com/embed/vbrII7frHV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-  <button onclick="buttonPress()">Join The Lenny Face Team</button>
+  <button onclick="buttonPress()">Join The Lenny Face Team</button> <br>
+  
+  <input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)"/><br>
+  <input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)"/><br>
+  <input type="range" id="slider" min="0" max="255" onchange="sliderChangeR(this.value)"/><br>
+         
+         
+         
   <a href="Lennyface.html"> Go to Lenny Face Hall of Fame</a
     
   </>
