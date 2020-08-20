@@ -13,7 +13,7 @@
          DOWN: 40,
          
          isDown: function(keyCode) {
-           return this._presseed[p=keyCode];
+           return this._pressed[keyCode];
          },
          
          onKeydown: function(event) {
@@ -25,8 +25,8 @@
          }
        };
        
-       window.addEventListener('keyup', function(event) { Key.onKeyup(event); }, false_;
-       window.addEventListener('keydown", function(event) { Key.onKeydown(event); }, false);
+       window.addEventListener('keyup', function(event) { Key.onKeyup(event); }, false;
+       window.addEventListener('keydown', function(event) { Key.onKeydown(event); }, false);
        
        var x = 50;
        var y = 50;
@@ -37,7 +37,7 @@
        
        var ctx = canvas.getContext('2d');
        
-       varspeed = 3;
+       var speed = 3;
        
        function draw() {
          // Clear screen
