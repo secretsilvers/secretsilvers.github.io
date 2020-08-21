@@ -37,6 +37,9 @@
        
        var ctx = canvas.getContext('2d');
        
+       var goalX = 200;
+       var goalY = 200;
+        
        var speed = 3;
        
        function draw() {
@@ -59,8 +62,14 @@
          
          var character = new Path2D();
          character.arc(x,y,25, 0, 2 * Math.PI);
+          
+         var character = new Path2D();
+         goal.arc(goalX,goalY, 25, 0, 2 * Math.Pi
          
+         ctx.fillStyle = "#42cef5"; // White
          ctx.fill(character);
+         ctx.fillStyle = "#FF0000"; // Red
+         ctx.fill(goal);
        }
        
        setInterval(draw, 10);
